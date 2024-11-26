@@ -34,7 +34,6 @@ class CelaController extends Controller
 
     public function show(string $id)
     {
-        // Exibir os detalhes de uma cela específica
     }
 
 

@@ -72,7 +72,6 @@
         </table>
     </div>
 
-    <!-- Modal de Sucesso -->
     @if (session('success'))
         <div id="successModal"
             class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
@@ -86,7 +85,6 @@
         </div>
     @endif
 
-    <!-- Modal de Deletar -->
     <div id="deleteModal"
         class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
         <div class="bg-gray-900 p-6 rounded-lg shadow-lg w-96 transform transition-all duration-500 scale-75 opacity-0">
@@ -101,7 +99,6 @@
     </div>
 
     <script>
-        // Abrir o modal de sucesso
         @if (session('success'))
             const successModal = document.getElementById('successModal');
             const successModalContent = successModal.querySelector('div');
@@ -111,7 +108,6 @@
             successModalContent.classList.add('scale-100', 'opacity-100');
         @endif
 
-        // Fechar o modal de sucesso
         function closeSuccessModal() {
             const successModal = document.getElementById('successModal');
             const successModalContent = successModal.querySelector('div');
@@ -121,7 +117,6 @@
             successModalContent.classList.remove('scale-100', 'opacity-100');
         }
 
-        // Abrir o modal de delete
         function openDeleteModal(presoId) {
             const modal = document.getElementById('deleteModal');
             const modalContent = modal.querySelector('div');
@@ -136,7 +131,6 @@
             }
         }
 
-        // Fechar o modal de delete
         function closeDeleteModal() {
             const modal = document.getElementById('deleteModal');
             const modalContent = modal.querySelector('div');

@@ -26,19 +26,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    // Rotas para *-*/
     Route::resource('presos', PresoController::class);
-
-    // Rotas para Celas
     Route::resource('celas', CelaController::class);
-
-    // Rotas para Visitas
     Route::resource('visitas', VisitaController::class);
-
-    // Rotas para Visitantes
     Route::resource('visitantes', VisitanteController::class);
-
-    // Rotas para Comportamento
     Route::resource('comportamento', ComportamentoController::class);
 
     Route::post('/logout', function () {

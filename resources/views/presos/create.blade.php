@@ -58,7 +58,6 @@
             @enderror
         </div>
 
-        <!-- Data de Condenação -->
         <div>
             <label for="data_condenacao" class="block text-gray-300 font-semibold mb-2">Data de Condenação</label>
             <input type="date" name="data_condenacao" id="data_condenacao" value="{{ old('data_condenacao') }}"
@@ -70,7 +69,6 @@
             @enderror
         </div>
 
-        <!-- Status -->
         <div>
             <label for="status" class="block text-gray-300 font-semibold mb-2">Status</label>
             <select name="status" id="status"
@@ -87,7 +85,6 @@
             @enderror
         </div>
 
-        <!-- Cela -->
         <div>
             <label for="cela_id" class="block text-gray-300 font-semibold mb-2">Cela</label>
             <select name="cela_id" id="cela_id"
@@ -106,7 +103,6 @@
             @enderror
         </div>
 
-        <!-- Botões -->
         <div class="mt-8 flex justify-between gap-6 col-span-2">
             <button type="submit"
                 class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 focus:outline-none transition duration-200">
