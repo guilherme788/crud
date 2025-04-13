@@ -9,8 +9,8 @@ class CreateVisitantesTable extends Migration
     {
         Schema::create('visitantes', function (Blueprint $table) {
             $table->id();
-            $table->string('nome'); // Nome do visitante
-            $table->string('documento_identidade')->unique(); // Documento de identidade
+            $table->string('nome'); 
+            $table->string('documento_identidade')->unique(); 
             $table->timestamps();
         });
     }
